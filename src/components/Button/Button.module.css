@@ -1,0 +1,17 @@
+.btn {
+  font-weight: 700;
+  padding: 6px 4px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--red-200);
+  color: var(--white);
+}
+
+.btn:hover {
+  background-color: var(--red-100);
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
