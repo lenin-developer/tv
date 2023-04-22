@@ -7,10 +7,11 @@ function* initDataMiddleware(action) {
   try {
     const { msg, response } = yield call(getChannels, action?.payload);
     msg === "OK"
-      ? yield put(setAllChannels, response?.channels)
+      ? yield put(setAllChannels(response?.channels))
       : console.warn("ocurrio un error en un requets");
-  } catch (error) {}
-  console.warn("ERRO");
+  } catch (error) {
+    console.warn("ERRO", error);
+  }
 }
 
 export function* channelsSaga() {
