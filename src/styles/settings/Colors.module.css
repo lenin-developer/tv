@@ -1,6 +1,10 @@
 :root {
   --white: #ebeef4;
   --black-50: #000000cd;
+
+  --black-100: #000000;
+  --gray-50: #5e5d5d;
+  --gray-100: #242323;
   --red-100: #ce3f3f;
   --red-200: #bd2929;
 }

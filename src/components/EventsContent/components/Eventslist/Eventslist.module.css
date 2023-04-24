@@ -1,0 +1,15 @@
+.eventslist {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+}
+
+.eventslist__channel {
+  display: flex;
+  height: var(--size-card-heigth-evnent);
+  width: max-content;
+
+  & > p {
+    color: var(--white);
+  }
+}

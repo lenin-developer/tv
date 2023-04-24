@@ -1,11 +1,14 @@
+import { TimeLine, PreViewEvent } from "@/components";
 import styles from "./Modal.module.css";
 
-export const Modal = ({ childre, showModal }) => {
+export const Modal = ({ showModal }) => {
   return (
     <div className={styles.wrapper}>
-      <section className={styles.modal}>
-        <div className={styles.contenido}></div>
-      </section>
+      <div className={styles.modal}>
+        <PreViewEvent />
+
+        <TimeLine />
+      </div>
     </div>
   );
 };

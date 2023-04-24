@@ -1,0 +1,40 @@
+.preView {
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--white);
+}
+
+.preView__close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 1.875rem 0px;
+}
+
+.close__btn {
+  padding: 0;
+  margin: 0;
+  height: max-content;
+  width: max-content;
+  background-color: transparent;
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+}
+
+.preView__contenDesc {
+  width: 40vw;
+  padding-top: 5%;
+  padding-bottom: min(10%, 80px);
+
+  & > p {
+    margin: 0.5rem 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .preView__contenDesc {
+    width: 90vw;
+  }
+}

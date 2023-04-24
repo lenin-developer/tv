@@ -10,7 +10,6 @@ export const channelsSlice = createSlice({
   initialState,
   reducers: {
     initData: (state) => {
-      console.log("reducer initData");
       state.loading = true;
     },
     setAllChannels: (state, action) => {

@@ -1,0 +1,10 @@
+:root {
+  --size-height-timeHours: 1.5625rem;
+  --size-card-heigth-channel-and-evnent: 5rem;
+  --size-card-heigth-evnent: calc(
+    var(--size-card-heigth-channel-and-evnent) + 0.5rem
+  );
+  --size-card-width-hrs-event: 18.75rem;
+  --size-margin-panelChannels: 0.5rem;
+  --size-font-timeHours: 0.625rem;
+}

@@ -1,0 +1,38 @@
+.event {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: var(--size-card-width-hrs-event);
+  background-color: var(--gray-100);
+  border: 1px solid var(--white);
+  color: aliceblue;
+}
+
+.event:hover {
+  background-color: var(--gray-50);
+  cursor: pointer;
+}
+
+.event__contenhrs {
+  display: flex;
+  justify-content: center;
+  align-content: space-evenly;
+  padding: 0.75rem 0;
+}
+
+.text {
+  margin: 0;
+}
+
+.text__min {
+  font-weight: 300;
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .preView__contenDesc {
+    width: 90vw;
+  }
+}

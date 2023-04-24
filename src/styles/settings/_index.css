@@ -1,2 +1,4 @@
 @import "./Colors.module.css";
 @import "./Typography.module.css";
+@import "./sizes.module.css";
+@import "./templates.module.css";
