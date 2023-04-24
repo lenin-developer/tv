@@ -11,7 +11,7 @@ export const UpstreamEventsFormat = (channels) => {
   const copiChannels = channels?.map((channel) => {
     const { id, number, name, image } = channel;
 
-    const metaDataEvet = channel?.events?.map((evet, index) => {
+    const newFormatEvet = channel?.events?.map((evet, index) => {
       const meta = {
         unix_begin: evet?.unix_begin,
         date_begin: evet?.date_begin,
@@ -23,7 +23,7 @@ export const UpstreamEventsFormat = (channels) => {
       return meta;
     });
 
-    const newFormatEvet = metaDataEvet?.sort((a, b) => {
+    const ordenEvetns = newFormatEvet?.sort((a, b) => {
       Adata = getOrdenEvent(a?.date_begin);
       Bdata = getOrdenEvent(b?.date_begin);
 
@@ -32,7 +32,7 @@ export const UpstreamEventsFormat = (channels) => {
 
     const newchannel = {
       ...channel,
-      events: newFormatEvet,
+      events: ordenEvetns,
       key: `${id}${number}`,
     };
     return newchannel;
