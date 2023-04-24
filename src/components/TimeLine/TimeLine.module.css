@@ -9,9 +9,9 @@
   overflow-x: hidden;
   background-color: var(--black-100);
 
-  /* &::-webkit-scrollbar {
+  &::-webkit-scrollbar {
     display: none;
-  } */
+  }
 }
 
 .timeLine__sectionChannel {
@@ -25,22 +25,7 @@
   overflow-x: scroll;
   overflow-y: hidden;
 
-  /* &::-webkit-scrollbar {
+  &::-webkit-scrollbar {
     display: none;
-  } */
+  }
 }
-
-/* .prueba {
-  background-color: red;
-
-  height: 500px;
-  color: aliceblue;
-  position: absolute;
-  top: 0;
-  overflow-x: hidden;
-}
-
-.prueba__cont {
-  width: 9000px;
-  overflow-x: scroll;
-} */
